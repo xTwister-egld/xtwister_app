@@ -1,0 +1,141 @@
+@import "../../assets/sass/colors.scss";
+
+body {
+  font-family: "PT Mono", monospace !important;
+}
+
+.warnings {
+  color: white;
+  text-align: center;
+}
+
+.options {
+  margin-top: 30px !important;
+  margin-bottom: 50px;
+  margin: 0 auto;
+  max-width: 700px !important;
+
+  h1 h5 {
+    font-weight: bold;
+  }
+
+  .card {
+    min-width: 280px;
+
+    max-width: 768px;
+
+    @media screen and (min-width: 768px) {
+      min-width: 550px;
+    }
+
+    @media screen and (max-width: 483px) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.panel_dashboard {
+  margin: 1%;
+  text-align: center;
+}
+
+.main_table {
+  padding: 25px;
+  min-width: 360px;
+}
+
+.title_wrapper {
+  display: flex;
+  margin: 20px 10px 0px 10px;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.MuiAccordion-root {
+  margin: 0px !important;
+  background-color: black !important;
+  border: solid rgb(124, 225, 179) 1px !important;
+  min-height: 0px !important;
+  .MuiAccordionSummary-root {
+    height: 0px !important;
+    min-height: 0px !important;
+
+    // .MuiSvgIcon-root{
+    //     color: white!important;
+    //     position: absolute!important;
+    //     margin-left: -21px!important;
+    // }
+    // .Mui-expanded .MuiSvgIcon-root{
+    //     color:white!important;
+    //     position: absolute!important;
+    //     margin-left: -1px!important;
+    //     margin-top: -23px!important;
+    // }
+  }
+}
+
+.wrapperText {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    color: #89fadd !important; // #7ce1b3
+    font-family: "Courier New", Courier, monospace;
+
+    font-weight: bold;
+  }
+
+  @media screen and (min-width: 601px) {
+    p {
+      font-size: min(5vw,50px) !important;
+    }
+  }
+
+  /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+  @media screen and (max-width: 600px) {
+    p {
+      font-size: max(5vw,10px) !important;
+      
+    }
+  }
+
+  .line {
+    position: relative;
+    border-right: 4px solid transparent;
+    width: 295px;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  .typing {
+    animation: typewriter 3s steps(25) 1s 1 normal both,
+      blinkCursor 0.6s steps(12) 5 normal;
+  }
+}
+
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blinkCursor {
+  from {
+    border-right-color: #016658//rgba(124, 225, 179, 0.5);
+  }
+
+  to {
+    border-right-color: #89fadd//rgba(124, 225, 179, 1);
+  }
+}
+.flechatrue {
+  transform: rotate(-180deg);
+  transition: all 4s ease-in-out;
+}

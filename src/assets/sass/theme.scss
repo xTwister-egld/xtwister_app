@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik:400,400i,500");
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600");
+
+
+/* Bootstrap overrides
+-------------------------------------------------- */
+@import './colors.scss';
+$body: #000;
+$headings-font-weight: 300 !important;
+$primary: #1b46c2;
+$light: #fafafa;
+$headings-font-weight: 300 !important;
+$a: #1392ff;
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap/scss/reboot';
+
+.btn-primary {
+  background: $primary_green;
+  color: black;
+}
+
+button{
+  &:hover{
+    background-color: $primary-green;
+  }
+  &:active{
+    background-color: $primary-green;
+  }
+}
+
+.btn{
+  font-family:"PT Mono", monospace ;
+  font-weight: bold;
+  font-size: 1.3rem ;
+  color: $primary-green ;
+  background: #016658;
+  &:hover{
+    background-color: $primary-green !important;
+  }
+  &:active{
+    background-color: $primary-green !important;
+  }
+}
+
+
+html {
+  min-height: 100%;
+  font-size: 16px;
+}
+body{
+  font-family: 'Rubik', sans-serif;
+  background: $gradient_bg_dark;
+}
+.wrapper {
+  min-height: 100vh;
+}
+
+.opacity-6 {
+  opacity: 0.6;
+}
+
+p{
+  color: white;
+}

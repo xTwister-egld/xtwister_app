@@ -1,0 +1,19 @@
+.gaugeGeneral {
+    width: 100%;
+    text-align: center;
+    padding-inline: 5px;
+}
+.gaugeNumber{
+    font-size: 2.5vmin;
+    line-height: 0;
+    font-weight: 900;
+}
+.gaugeLabel{
+    color: #8b8ba7;
+    margin-top: 1em;
+    font-size: 1.5vmin;
+    
+    line-height: 1.3em;
+    font-weight: 700;
+    inline-size: center;
+}

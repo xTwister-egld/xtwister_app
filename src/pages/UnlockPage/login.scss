@@ -1,0 +1,46 @@
+@import '../../assets/sass/colors.scss';
+.login{
+    .login-btn_wrapper {
+        width: 100%;
+        display: block;
+        background: none;
+        color: inherit;
+        padding: 0;
+        font: inherit;
+        cursor: pointer;
+        outline: inherit; 
+    }
+    .btn-unlock{       
+        background-color: $primary_dark;
+        color: #2b2d2e;
+        padding: 0.8rem 2rem;
+        border-color: $primary_green;
+        
+        &:hover {
+            background-color: $border_color;
+            color: $border_color;
+            background:linear-gradient(113.97deg, $border_color 55.77%, rgba(0, 0, 0, 0) 121.18%); ;
+        }
+    }
+    .loginDirection{
+        flex-direction: column;
+        background-color: $primary_dark;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px $primary_green;;
+        color: #fff;
+        padding-left: 6rem !important;
+        padding-right: 6rem !important;
+    }
+    .cu-toplogin{
+        margin-top: 60px !important;
+    }
+    .border-unset{
+        border: unset;
+    }
+    .title{
+        color: white;;
+    }
+    
+}
+
+

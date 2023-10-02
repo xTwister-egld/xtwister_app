@@ -1,0 +1,92 @@
+/*
+.elrond-logo{
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+*/
+/*
+green
+.elrond-logo{
+    filter: invert(85%) sepia(15%) saturate(809%) hue-rotate(96deg) brightness(94%) contrast(92%);
+}
+*/
+
+/* .elrond-logo{
+    filter: invert(40%) sepia(41%) saturate(7119%) hue-rotate(218deg) brightness(98%) contrast(112%);
+} */
+
+div.head {
+    text-align: center;
+    max-width: 800px;
+
+    .row {
+        flex-wrap: nowrap;
+        
+        justify-content: space-between;
+
+        .navbar-nav {
+            align-items: flex-end;
+        }
+
+        .navbar {
+            justify-content: center !important;
+        
+            /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+            @media screen and (max-width: 600px) {
+                transform: scale(80%);
+                transform-origin: top right;
+                padding-top: 15px;
+                padding-right: 10px;
+                width: min-content;
+            }        
+        }
+    }
+}
+
+div.absolutContainer {
+
+
+    z-index: 1;
+}
+
+.dapp-name img {
+    width: 10%;
+    min-width: 20px !important;
+    max-width: 40px !important;
+    height: auto;
+}
+
+.elrond-logo {
+
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (min-width: 601px) {
+        width: min(10vw, 90px) !important;
+
+    }
+
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+        width: max(10vw, 50px) !important;
+        padding-bottom: 20px !important;
+    }
+
+}
+
+.col-md-auto {
+    display: flex;
+    flex-wrap: nowrap;
+    width: auto!important;
+    color: #89fadd;//rgb(148, 254, 191)!important;
+
+    /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+    @media screen and (max-width: 600px) {
+
+        font-size: max(2vw, 10px) !important;
+        
+
+
+    }
+
+}
+.coin_api{
+    padding-inline: 0px !important;
+}

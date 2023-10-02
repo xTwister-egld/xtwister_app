@@ -1,0 +1,19 @@
+@import '../../../../assets/sass/colors.scss';
+
+.note{
+    color: $primary_green;
+}
+
+.MuiOutlinedInput-notchedOutline , .MuiInputLabel-root, .MuiSelect-select{
+  border-color: white !important;
+  color: white !important;
+}
+.MuiSelect-select{
+  display: flex !important;
+}
+.MuiFormControlLabel-root:has(.Mui-checked) {
+    -webkit-text-fill-color: #89fadd ;
+    
+  }
+
+  

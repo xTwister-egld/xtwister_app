@@ -1,0 +1,42 @@
+@import "../../../../assets/sass/colors.scss";
+ 
+.note {
+  color: $primary_green;
+  line-break: anywhere;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  .MuiSvgIcon-root {
+    color: red;
+  }
+}
+.border_red {
+  color: white;
+  background-color: black;
+}
+.modal_note {
+  @media screen and (max-width: 600px) {
+    font-size: 13px;
+    h2{
+      font-size:15px;
+    }
+  }
+.MuiPaper-root {
+  overflow: visible !important;
+}
+.MuiDialogContent-root {
+  overflow: visible !important;
+}
+}
+
+.modal-default-close {
+  position: absolute;
+  padding: 3px;
+  background: rgb(102, 6, 6);
+  color: white;
+  top: -47px;
+  right: -35px;
+  border-radius: 23px;
+  &:hover {
+    background-color: red;
+  }
+}

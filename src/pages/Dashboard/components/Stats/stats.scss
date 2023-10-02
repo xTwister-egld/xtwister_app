@@ -1,0 +1,53 @@
+@import '../../../../assets/sass/colors.scss';
+.twister
+{
+    background-color: transparent !important;
+}
+.data_statistics{
+    min-width: 310px;
+    border: 3px solid  #89fadd;
+    border-radius: 0px 7px 7px 7px;
+}
+
+.heading-leaderboard{
+    min-width: 155px;
+    width: 50%;
+    margin-bottom: 0px !important; 
+    border: 3px solid #89fadd;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-top-left-radius: 13px;
+    border-top-right-radius: 50px;
+    justify-content: center;
+    background-color: $primary_green;
+    font-family:"PT Mono", monospace ;
+    font-weight: bold;
+    font-size: 1.3rem ;
+
+}
+//header
+.statistics thead{
+    background: black;
+    color: white;
+    font-weight: bold;
+}
+//Pairs
+.statistics tbody tr{
+    background-color: #232323 !important;
+    color: white !important;
+}
+//Odds
+.statistics tbody tr:nth-of-type(odd) {
+    background-color: #016658 !important;
+    color: #89fadd !important;
+}
+.statistics{
+    padding: 25px;
+}
+
+table, tr, td {
+    border: none !important;
+}
+.table{
+    margin-bottom: 0px !important;
+}

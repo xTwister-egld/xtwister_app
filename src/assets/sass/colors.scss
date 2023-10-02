@@ -1,0 +1,10 @@
+$primary_dark: #18191a; //background
+$primary_green: #89fadd;//borders color buttons
+$primary_blue: #89fadd;
+$border_color: #016658;//#164a29;
+
+$gradient_bg_dark: linear-gradient(166deg, $primary_dark 20%, $primary_dark 80%);
+$gradient_bg_green: linear-gradient(166deg, $primary_blue 20%, $primary_green 80%);
+
+
+$gray_light: $primary_green;

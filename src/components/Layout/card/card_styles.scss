@@ -1,0 +1,52 @@
+@import '../../../assets/sass/colors.scss';
+
+.twistter_card{
+    &.card{
+        
+        /* every styles in card component must be here */
+        box-shadow: 0 0.6rem 1rem 0 rgb(0 0 0 / 6%);
+        background-clip: border-box;
+        border-radius: 0.75rem;
+        position:relative;   
+        background-color: black;
+        color: white;
+        .card-icon{
+            position: absolute;
+            top: -2rem;
+            right: 70%;
+            transform: translateX(-50%);
+        }
+        #pool-icon .token-symbol {
+            box-shadow: 0 0 0 6px $primary_green;
+        }
+        .token-icon-xl .token-symbol {
+            width: 5.3rem;
+            height: 5.3rem;
+        }
+        .token-icon-xl .token-symbol img {
+            width: 3.4rem;
+            height: 3.4rem;
+        }
+        
+    }
+
+    .menu-item{
+        border: 2px solid $gray_light;
+        color:white;
+        background-color: $primary_dark;
+    }
+
+    .MuiFilledInput-root{
+        padding: 10px;
+        color: white;
+    }
+
+
+    .logo_token{
+        color: #fff;
+        font-weight: bold;
+    }
+    .MuiFormLabel-root {
+        color: white;
+    }
+}
