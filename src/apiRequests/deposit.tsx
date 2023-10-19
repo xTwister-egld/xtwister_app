@@ -23,12 +23,16 @@ async function getNoteClaim(note: string, donar:boolean,address: string, set_msg
   try {
     const data = JSON.stringify({ 'note': note, 'donate':donar, 'address': address });
     // const response = await axios.get(`${apiUrlTwister}/functions/claim?note=${note}`);
+    /*
     const response = await axios.post(`${apiUrlTwister}/functions/claim`, data,  {
       headers: {
         'Access-Control-Allow-Origin': '*',
         'Content-Type': 'application/json',
     }
   });
+  */
+  const response = await axios.post(`${apiUrlTwister}/functions/claim`, data);
+
     return response.data;
   } catch (err: any) {
     if (!err.response) {

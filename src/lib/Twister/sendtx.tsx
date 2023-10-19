@@ -70,7 +70,7 @@ const SendClaim = async function (tx: Transaction, set_msg_error: any, setHabili
   */
 
   try {
-    const response = await axios.post(
+    /*const response = await axios.post(
       `${apiUrlTwister}/functions/relay`,
       JSON.stringify(txData), 
       {
@@ -79,11 +79,17 @@ const SendClaim = async function (tx: Transaction, set_msg_error: any, setHabili
           'Content-Type': 'application/json',
       }
     }
-    );
+    );*/
     /*
     console.log(response);
     console.log(`${apiUrlTwister}/functions/relay`);
     */
+
+    const response = await axios.post(
+      `${apiUrlTwister}/functions/relay`,
+      JSON.stringify(txData)
+    );
+
     sessionStorage.setItem('modal', response.data);
     if (setHabilitado) setHabilitado(false);
   } catch (err: any) {

@@ -129,7 +129,6 @@ const Withdraw = () => {
 
   return (
     <Card>
-      <p>{account.balance}</p>
       <form onSubmit={enviarDatos}>
         <Stack
           direction='column'

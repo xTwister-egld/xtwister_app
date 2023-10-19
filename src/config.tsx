@@ -16,8 +16,8 @@ import {
 export const dAppName = 'xTwister x🌪️⚡';
 export const projectName = 'xTwister MIXER';
 //export const environment = TYPE_ENV_TEST; // ==> TESTNET
-//export const environment = TYPE_ENV_MAIN; // ==> MAINNET
-export const environment = TYPE_ENV_DEV; // ==> DEVNET
+export const environment = TYPE_ENV_MAIN; // ==> MAINNET
+//export const environment = TYPE_ENV_DEV; // ==> DEVNET
 
 export const contractAddress = avb_twister[environment]; //SC Twister
 export const apiUrl = avb_apiURL[environment]; //URL Api
