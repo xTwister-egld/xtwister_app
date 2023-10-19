@@ -1,74 +1,52 @@
-# @elrondnetwork/dapp-xTwister
-The __MultiversX dApp xTwister__, built using [React.js](https://reactjs.org/) and [Typescript](https://www.typescriptlang.org/).
-It's a basic implementation of [@elrondnetwork/dapp-core](https://www.npmjs.com/package/@elrondnetwork/dapp-core), providing the basics for MultiversX authentication and TX signing.
+# xTwister: Privacy and Security in Transactions for MultiversX
 
-See [Dapp xTwister](https://www.xtwister.cash//) for live demo.
+Welcome to xTwister, where your privacy and security are our top priorities! In the world of MultiversX, transparency and privacy are crucial. That's why we've developed xTwister: a secure and anonymous payment protocol to protect your financial transactions.
+<div align="center"><img src="https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/logo192.png" alt="xTwister Logo"/></div>
 
-## Requirements
+## Problem: Lack of Privacy in Public Transactions
 
-* Node.js version 12.16.2+
-* Npm version 6.14.4+
+As you know, all your transaction history, your $EGLD and $ESDT balance, staking position, the NFTs you own – all of that valuable information is **PUBLIC**. Anyone who knows your herotag or with whom you've exchanged tokens or NFTs could trace all your movements, from the origin to the destination of your funds, even uncover your activities on centralized exchanges (CEX). It can be terrifying, right? These were the rules of the game in Elrond, **until now**.
 
-## Getting Started
+## Solution: xTwister Smart Contract Mixer
 
-The dapp is a client side only project and is built using the [Create React App](https://create-react-app.dev)  scripts.
+With xTwister, we offer you a simple and secure solution. We use a **Smart Contract Mixer** to ensure your transactions are **100% anonymous**. Here's how it works:
 
-### Instalation and running
+### **Anonymous Deposit**
 
-### Step 1. Install modules
+1. **Connect to the DAPP:**
+   Connect your wallet (WALLET A) to our application, select the desired amount, and click "DEPOSIT". Our service creates a secret note that you **MUST** save, as it is the key to withdrawing your funds in the future.
+   <div align="center"><img src="https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/readme_photos/deposit.png" alt="Deposit" width="400"/></div>
 
-From a terminal, navigate to the project folder and run:
+2. **Confirm Your Transaction:**
+   Once the transaction is confirmed, our Smart Contract stores the funds and adds the encrypted note (commitment) to the list of deposits. **No one but you** has access to the note or the funds.
+   <div align="center"><img src="https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/readme_photos/note.png" alt="Note" width="400"/></div>
 
-```bash
-npm install
-```
+3. **Verify Your Transaction:**
+   It's **mandatory** to verify the transaction result in the **MultiversX Explorer** to ensure its success.
+   <div align="center"><img src="https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/readme_photos/statics.png" alt="Statics" width="400"/></div>
 
-### Step 2. Update environment
+### **Privacy Score and Relayer Way**
 
-Go to `App.tsx` and edit the `environment` variable according to the environment you want the app to run on.
-Valid values are `testnet`, `devnet` or `mainnet`
+- **Privacy Score:**
+  Our approach is similar to a traffic light. Each type of deposit has a score, and the color of the indicator tells you if it's safe to withdraw the funds. Choose an amount with a high Privacy Score to enhance your anonymity.
+  <div align="center"><img src="https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/readme_photos/score.png" alt="Score" width="400"/></div>
 
-If you need to edit the network configuration, you can pass in a `customNetworkConfig` object.
-More info about this can be found in [dapp-core documentation](https://github.com/ElrondNetwork/dapp-core)
+- **The Relayer Way:**
+  We faced the challenge of how to add funds to the anonymous wallet to pay transaction fees. With our **RELAYER** feature, you don't need to do anything. The new wallet will receive the funds without the need to deposit EGLD beforehand, keeping it private and secure.
+  <div align="center"><img src="https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/readme_photos/relayer.png" alt="Relayer" width="400"/></div>
 
-### Step 3. Running in development mode
+## **Watch Our Video Demo!**
 
-In the project folder run:
+[![xTwister Demo](https://raw.githubusercontent.com/xTwister-egld/xtwister_app/main/public/readme_photos/main.png)](https://player.vimeo.com/video/876105311?badge=0&amp)
 
-```bash
-npm run start
-```
+<div align="center">
 
-This will start the React app in development mode, using the configs found in the `config.tsx` file.
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+With xTwister, your privacy and security are guaranteed. If you want to learn more about xTwister, check out our [GitBook](https://xtwister.gitbook.io/litepaper/xtwister/introduction).
 
-### Step 4. Build for testing and production use
+---
 
-A build of the app is necessary to deploy for testing purposes or for production use.
-To build the project run:
+**Made with ❤️ by [@xtwister_egld](https://twitter.com/xtwister_egld)**
 
-```bash
-npm run build
-```
-
-## Roadmap
-
-See the [open issues](https://github.com/ElrondNetwork/dapp-xTwister/issues) for a list of proposed features (and known issues).
-
-## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
-
-One can contribute by creating _pull requests_, or by opening _issues_ for discovered bugs or desired features.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## Developers
-
+</div>
